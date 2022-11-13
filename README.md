@@ -1,7 +1,22 @@
-# Vue 3 + Vite
+# Minimal Startpage
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Very simple page for web browser startpage or homepage.
+Built with Vitejs, Vue, UnoCSS.
+The favicon is from Iconmonstr.
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+-   [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+## Before you run
+
+You gonna need Nodejs installed, latest is recommended.
+
+## How to run
+
+-   Clone this repo
+-   Open terminal and `cd startpage`
+-   Install dependencies `npm install `
+-   Finally run using `npm run dev`
+
+## Enjoy! feel free to clone and mod it
