@@ -1,11 +1,14 @@
 <template>
     <section class="mb-8">
-        <ul class="list-none m-0 p-0 flex flex-row flex-wrap gap-4 md:gap-3 lg:gap-0 w-full md:w-1/2">
+        <ul
+            class="list-none m-0 p-0 flex flex-row flex-wrap gap-4 md:gap-3 lg:gap-x-0 lg:gap-y-3 w-full md:w-2/3">
             <li v-for="link in links" class="w-1/3 md:w-1/4">
-                <a @click="goTo(link.url)"
+                <a
+                    @click="goTo(link.url)"
                     class="text-white font-sans no-underline font-medium tracking-tight hover:underline hover:cursor-pointer">
-                    <span class="opacity-50 mr-2">
-                        {{ link.id }}
+                    <span
+                        class="text-gray-500 font-mono tracking-tighter bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
+                        Alt + {{ link.id }}
                     </span>
                     <span>
                         {{ link.name }}
@@ -13,6 +16,13 @@
                 </a>
             </li>
         </ul>
+        <p class="text-white font-sans no-underline font-medium tracking-tight">
+            <span
+                class="text-gray-500 font-mono tracking-tighter bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
+                Alt + K
+            </span>
+            <span> To toggle search </span>
+        </p>
     </section>
 </template>
 
@@ -26,42 +36,41 @@ export default defineComponent({
         //this function is used to capture keypress on window load
         tinykeys(window, {
             //search box added "s" on focus, don't know how to fix that
-            "s": () => {
-                let search = document.getElementById('search');
-                search.focus();
+            'Alt+K': () => {
+                let search = document.getElementById('search')
+                search.focus()
             },
-            "1": () => {
+            'Alt+Digit1': () => {
                 this.goTo(this.links[1].url)
             },
-            "2": () => {
+            'Alt+Digit2': () => {
                 this.goTo(this.links[2].url)
             },
-            "3": () => {
+            'Alt+Digit3': () => {
                 this.goTo(this.links[3].url)
             },
-            "4": () => {
+            'Alt+Digit4': () => {
                 this.goTo(this.links[4].url)
             },
-            "5": () => {
+            'Alt+Digit5': () => {
                 this.goTo(this.links[5].url)
             },
-            "6": () => {
+            'Alt+Digit6': () => {
                 this.goTo(this.links[6].url)
             },
-            "7": () => {
+            'Alt+Digit7': () => {
                 this.goTo(this.links[7].url)
             },
-            "8": () => {
+            'Alt+Digit8': () => {
                 this.goTo(this.links[8].url)
             },
-
         })
     },
     methods: {
         //This function is used to open link based on key pressed
         //to change link and it's name, edit links objects below
         goTo(link) {
-            window.open(link, '_self');
+            window.open(link, '_self')
         },
     },
     data() {

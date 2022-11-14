@@ -8,6 +8,11 @@ The favicon is from Iconmonstr.
 
 ![Preview](public/startpage.png)
 
+## Hot key
+
+-   `Alt + 1` to `Alt + 8` go to each link respectively
+-   `Alt + K` to focus search input (Google)
+
 ## How to edit
 
 ### Links
