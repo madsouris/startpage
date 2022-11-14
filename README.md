@@ -4,6 +4,8 @@ Very simple page for web browser startpage or homepage.
 Built with Vitejs, Vue, UnoCSS.
 The favicon is from Iconmonstr.
 
+![Preview](public/startpage.png)
+
 ## How to edit
 
 ### Links
