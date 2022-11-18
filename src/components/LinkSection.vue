@@ -1,13 +1,10 @@
 <template>
     <section class="mb-8">
-        <ul
-            class="list-none m-0 p-0 flex flex-row flex-wrap gap-4 md:gap-3 lg:gap-x-0 lg:gap-y-3 w-full md:w-2/3">
+        <ul class="list-none m-0 p-0 flex flex-row flex-wrap gap-4 md:gap-3 lg:gap-x-0 lg:gap-y-3 w-full md:w-2/3">
             <li v-for="link in links" class="w-1/3 md:w-1/4">
-                <a
-                    @click="goTo(link.url)"
+                <a @click="goTo(link.url)"
                     class="text-white font-sans no-underline font-medium tracking-tight hover:underline hover:cursor-pointer">
-                    <span
-                        class="text-gray-500 font-mono tracking-tighter bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
+                    <span class="text-gray-500 font-mono tracking-tighter bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
                         Alt + {{ link.id }}
                     </span>
                     <span>
@@ -17,8 +14,7 @@
             </li>
         </ul>
         <p class="text-white font-sans no-underline font-medium tracking-tight">
-            <span
-                class="text-gray-500 font-mono tracking-tighter bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
+            <span class="text-gray-500 font-mono tracking-tighter bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
                 Alt + K
             </span>
             <span> To toggle search </span>
@@ -30,39 +26,43 @@
 import { defineComponent } from 'vue'
 import tinykeys from 'tinykeys'
 
+// Local JSON
+import links from '../data.json'
+
 export default defineComponent({
     name: 'LinkSection',
     mounted() {
         //this function is used to capture keypress on window load
+        //Using minus 1 to access it's correct position, i messed up thinking it counts from 1, but it's from 0
         tinykeys(window, {
-            //search box added "s" on focus, don't know how to fix that
+
             'Alt+K': () => {
                 let search = document.getElementById('search')
                 search.focus()
             },
             'Alt+Digit1': () => {
-                this.goTo(this.links[1].url)
+                this.goTo(this.links[1 - 1].url)
             },
             'Alt+Digit2': () => {
-                this.goTo(this.links[2].url)
+                this.goTo(this.links[2 - 1].url)
             },
             'Alt+Digit3': () => {
-                this.goTo(this.links[3].url)
+                this.goTo(this.links[3 - 1].url)
             },
             'Alt+Digit4': () => {
-                this.goTo(this.links[4].url)
+                this.goTo(this.links[4 - 3].url)
             },
             'Alt+Digit5': () => {
-                this.goTo(this.links[5].url)
+                this.goTo(this.links[5 - 1].url)
             },
             'Alt+Digit6': () => {
-                this.goTo(this.links[6].url)
+                this.goTo(this.links[6 - 1].url)
             },
             'Alt+Digit7': () => {
-                this.goTo(this.links[7].url)
+                this.goTo(this.links[7 - 1].url)
             },
             'Alt+Digit8': () => {
-                this.goTo(this.links[8].url)
+                this.goTo(this.links[8 - 1].url)
             },
         })
     },
@@ -76,50 +76,8 @@ export default defineComponent({
     data() {
         return {
             command: '',
-            links: {
-                //use name number as name identifier
-                //id is used to show key number before the link name, check the template above
-                1: {
-                    url: 'https://youtube.com',
-                    name: 'YouTube',
-                    id: '1',
-                },
-                2: {
-                    url: 'https://github.com',
-                    name: 'Github',
-                    id: '2',
-                },
-                3: {
-                    url: 'https://twitter.com',
-                    name: 'Twitter',
-                    id: '3',
-                },
-                4: {
-                    url: 'https://twitch.tv',
-                    name: 'Twitch',
-                    id: '4',
-                },
-                5: {
-                    url: 'https://netlify.com',
-                    name: 'Netlify',
-                    id: '5',
-                },
-                6: {
-                    url: 'https://cattieoutfit.com',
-                    name: 'Cattie Outfit',
-                    id: '6',
-                },
-                7: {
-                    url: 'https://uptimerobot.com',
-                    name: 'UptimeRobot',
-                    id: '7',
-                },
-                8: {
-                    url: 'https://photo.google.com',
-                    name: 'Photo',
-                    id: '8',
-                },
-            },
+            // This is from local JSON
+            links: links
         }
     },
 })

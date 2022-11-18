@@ -17,12 +17,8 @@ The favicon is from Iconmonstr.
 
 ### Links
 
-You might wanna look at `LinkSection.vue` in `/src/components`.
-In Vue's data() function, you'd see links object. Edit how you wish.
-
--   In `links` object, you have it's children 1,2....8, I use them to identify the link, they are also related to the Hotkeys section, make sure they are matched
--   Each children has `id: x`, I used to view the number in the template, it also matches the hotkey and it's object name.
--   In `mounted` hook, it's the function to capture keypress. Again, it maches with `links` objects and it's property `id`
+You might wanna look at `LinkSection.vue` in `/src/components` First.
+`links` object is read from `/src/data.json` file, so please edit your links there.
 
 ## How to setup my browser to open the page on load and new tab?
 
