@@ -8,6 +8,13 @@ The favicon is from Iconmonstr.
 
 ![Preview](public/startpage.png)
 
+# Features
+
+-   Hotkeys to open links faster
+-   PWA for faster interaction, cache, and installable
+-   Google search with Alt+K
+-   Easy dev setup with Vitejs + Vue + UnoCSS
+
 ## Hot key
 
 -   `Alt + 1` to `Alt + 8` go to each link respectively
