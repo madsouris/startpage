@@ -1,22 +1,22 @@
 [
     {
-        "url": "https://youtube.com",
-        "name": "YouTube",
+        "url": "https://app.raindrop.io",
+        "name": "Raindrop",
         "id": 1
     },
     {
-        "url": "https://twitter.com",
-        "name": "Twitter",
+        "url": "https://youtube.com",
+        "name": "YouTube",
         "id": 2
     },
     {
-        "url": "https://facebook.com",
-        "name": "Facebook",
+        "url": "https://mas.to",
+        "name": "Mastodon",
         "id": 3
     },
     {
-        "url": "https://reddit.com",
-        "name": "Reddit",
+        "url": "https://kohsantepheapdaily.com.kh/",
+        "name": "News",
         "id": 4
     },
     {
@@ -35,8 +35,8 @@
         "id": 7
     },
     {
-        "url": "https://netlify.com",
-        "name": "Netlify",
+        "url": "https://figma.com",
+        "name": "Figma",
         "id": 8
     }
 ]

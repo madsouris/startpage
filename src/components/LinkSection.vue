@@ -1,8 +1,8 @@
 <template>
     <section class="mb-8">
         <ul
-            class="list-none m-0 p-0 flex flex-row flex-wrap gap-4 md:gap-3 lg:gap-x-0 lg:gap-y-3 w-full md:w-2/3">
-            <li v-for="link in links" class="w-1/3 md:w-1/4">
+            class="list-none m-0 p-0 flex flex-row flex-wrap gap-x-0 gap-y-2 lg:gap-x-0 lg:gap-y-3 w-full lg:w-2/3">
+            <li v-for="link in links" class="w-1/2 md:w-1/3 lg:w-1/4">
                 <a
                     @click="goTo(link.url)"
                     class="text-white font-sans no-underline font-medium tracking-tight hover:underline hover:cursor-pointer">

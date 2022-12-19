@@ -8,7 +8,7 @@
                 href="//vannrith.com"
                 >@madsouris</a
             >
-            ||
+            |
             <a
                 class="text-white hover:no-underline transition-all"
                 href="//instagram.com/procambodia"
