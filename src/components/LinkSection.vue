@@ -1,13 +1,11 @@
 <template>
     <section class="mb-8">
-        <ul
-            class="list-none m-0 p-0 flex flex-row flex-wrap gap-x-0 gap-y-2 lg:gap-x-0 lg:gap-y-3 w-full lg:w-2/3">
+        <ul class="list-none m-0 p-0 flex flex-row flex-wrap gap-x-0 gap-y-2 lg:gap-x-0 lg:gap-y-3 w-full lg:w-2/3 mb-3">
             <li v-for="link in links" class="w-1/2 md:w-1/3 lg:w-1/4">
-                <a
-                    @click="goTo(link.url)"
-                    class="text-white font-sans no-underline font-medium tracking-tight hover:underline hover:cursor-pointer">
+                <a @click="goTo(link.url)"
+                    class="text-gray-700 dark:text-white font-sans no-underline font-medium tracking-tight hover:underline hover:cursor-pointer">
                     <span
-                        class="text-gray-500 font-mono tracking-tighter bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
+                        class="text-gray-800 dark:text-gray-500 font-mono tracking-tighter bg-gray-300 dark:bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
                         Alt + {{ link.id }}
                     </span>
                     <span>
@@ -16,9 +14,9 @@
                 </a>
             </li>
         </ul>
-        <p class="text-white font-sans no-underline font-medium tracking-tight">
+        <p class="text-gray-800 dark:text-white font-sans no-underline font-medium tracking-tight">
             <span
-                class="text-gray-500 font-mono tracking-tighter bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
+                class="text-gray-800 dark:text-gray-500 font-mono tracking-tighter bg-gray-300 dark:bg-gray-900 p-1 rounded mr-2 text-[0.7rem]">
                 Alt + K
             </span>
             <span> To toggle search </span>

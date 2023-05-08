@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/242d8fa0-3c78-4bde-bcd2-d711b23000c9/deploy-status)](https://app.netlify.com/sites/vermillion-kangaroo-91a62e/deploys)
 
 Very simple page for web browser startpage or homepage.
-Built with Vitejs, Vue, UnoCSS.
+Built with Vitejs, Vue, TailwindCSS.
 The favicon is from Iconmonstr.
 
 ![Preview](public/startpage.png)
@@ -45,7 +45,7 @@ You gonna need Nodejs installed, latest is recommended.
 -   Tinykeys (https://github.com/jamiebuilds/tinykeys)
 -   Vue 3
 -   Vitejs
--   UnoCSS
+-   TailwindCSS
 
 ## How to run
 

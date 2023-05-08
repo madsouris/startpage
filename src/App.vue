@@ -1,10 +1,9 @@
 <template>
-    <main
-        class="flex flex-col bg-black min-h-screen justify-center text-white px-4 md:px-16">
+    <main class="flex flex-col bg-white dark:bg-black min-h-screen justify-center px-4 md:px-16">
         <LinkSection />
         <SearchSection />
     </main>
-    <footer class="fixed bottom-0 w-full bg-black">
+    <footer class="fixed bottom-0 w-full bg-white dark:bg-black">
         <FooterSection />
     </footer>
 </template>
