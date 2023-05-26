@@ -13,7 +13,7 @@ The favicon is from Iconmonstr.
 -   Hotkeys to open links faster
 -   PWA for faster interaction, cache, and installable
 -   Google search with Alt+K
--   Easy dev setup with Vitejs + Vue + UnoCSS
+-   Easy dev setup with Vitejs + Vue + TailwindCSS
 
 ## Hot key
 
