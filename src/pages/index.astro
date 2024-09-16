@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro'
+import FooterSection from '../components/FooterSection.astro'
+import LinkSection from '../components/LinkSection.astro'
+import SearchSection from '../components/SearchSection.astro'
+---
+
+<Layout>
+    <main
+        class="flex flex-col bg-white dark:bg-black min-h-screen justify-center px-4 md:px-16">
+        <LinkSection />
+        <SearchSection />
+    </main>
+    <footer class="fixed bottom-0 w-full bg-white dark:bg-black">
+        <FooterSection />
+    </footer>
+</Layout>

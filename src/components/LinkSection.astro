@@ -1,0 +1,36 @@
+---
+const links = [
+  { name: "Raindrop", url: "https://app.raindrop.io"},
+  { name: "YouTube", url: "https://www.youtube.com" },
+  { name: "News", url: "https://www.kohsantepheapdaily.com.kh" },
+  { name: "HLTV", url: "https://www.hltv.org" },
+  { name: "GitHub", url: "https://www.github.com" },
+  { name: "Twitter", url: "https://www.x.com" },
+  { name: "Gemini", url: "https://www.gemini.google.com" },
+  { name: "Reddit", url: "https://www.reddit.com" },
+  
+];
+---
+
+<section class="mb-8">
+  <p
+    class="text-green-700 dark:text-green-500 text-sm font-sans no-underline font-medium tracking-tight border border-green-200 dark:border-green-900 p-0 mb-4 inline-block pe-4 rounded"
+  >
+    <span
+      class="text-green-700 dark:text-green-500 font-mono tracking-tight text-sm bg-green-200 dark:bg-green-900 rounded p-1 me-3"
+    >
+      gi
+    </span>
+    <span> To toggle search </span>
+  </p>
+  <ul
+    class="list-none m-0 p-0 flex flex-row flex-wrap gap-6 w-full lg:w-2/3 mb-3"
+  >
+  {links.map(link => (
+    <li>
+      <a class="text-gray-800 dark:text-gray-500 font-mono  rounded text-sm hover:underline hover:text-green-800" href={link.url}>{link.name}</a>
+    </li>
+  ))}
+  </ul>
+  
+</section> 
