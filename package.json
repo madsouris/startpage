@@ -15,6 +15,7 @@
         "tailwindcss": "^3.4.11"
     },
     "devDependencies": {
+        "@vite-pwa/astro": "^0.4.3",
         "prettier": "^3.3.3",
         "prettier-plugin-astro": "^0.14.1"
     }
