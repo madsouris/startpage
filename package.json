@@ -10,13 +10,15 @@
         "astro": "astro"
     },
     "dependencies": {
-        "@astrojs/tailwind": "^5.1.0",
-        "astro": "^4.15.6",
+        "@astrojs/tailwind": "^5.1.5",
+        "astro": "^5.1.10",
         "tailwindcss": "^3.4.11"
     },
     "devDependencies": {
-        "@vite-pwa/astro": "^0.4.3",
+        "@vite-pwa/astro": "^0.5.0",
         "prettier": "^3.3.3",
-        "prettier-plugin-astro": "^0.14.1"
+        "prettier-plugin-astro": "^0.14.1",
+        "vite-plugin-pwa": "^0.21.1",
+        "workbox-precaching": "^7.3.0"
     }
 }
