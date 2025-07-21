@@ -6,7 +6,7 @@ Very simple page for web browser startpage or homepage.
 Built with Astro and TailwindCSS.
 The favicon is from Iconmonstr.
 
-![Preview](public/startpage.jpeg)
+![Preview](public/startpage.png)
 
 ## Project Structure
 

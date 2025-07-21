@@ -11,3 +11,8 @@
   for = "/manifest.webmanifest"
   [headers.values]
     Content-Type = "application/manifest+json"
+
+    [[headers]]
+      for = "/*"
+      [headers.values]
+        Cache-Control = "public, max-age=31536000, immutable"
