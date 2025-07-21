@@ -1,24 +1,25 @@
 {
-    "name": "startpage",
-    "type": "module",
-    "version": "0.0.1",
-    "scripts": {
-        "dev": "astro dev",
-        "start": "astro dev",
-        "build": "astro build",
-        "preview": "astro preview",
-        "astro": "astro"
-    },
-    "dependencies": {
-        "@astrojs/tailwind": "^5.1.5",
-        "astro": "^5.1.10",
-        "tailwindcss": "^3.4.11"
-    },
-    "devDependencies": {
-        "@vite-pwa/astro": "^0.5.0",
-        "prettier": "^3.3.3",
-        "prettier-plugin-astro": "^0.14.1",
-        "vite-plugin-pwa": "^0.21.1",
-        "workbox-precaching": "^7.3.0"
-    }
+  "name": "startpage",
+  "type": "module",
+  "version": "0.0.2",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.0",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "@vite-pwa/astro": "^1.1.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "vite-plugin-pwa": "^0.21.1",
+    "workbox-precaching": "^7.3.0"
+  }
 }

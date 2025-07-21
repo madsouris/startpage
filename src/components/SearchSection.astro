@@ -3,25 +3,25 @@
         id="search"
         type="text"
         name="q"
-        placeholder="Search"
-        class="transition-all outline-none w-full font-bold bg-white dark:bg-black border-0 border-b border-transparent px-0 text-black dark:text-white text-[5rem] md:text-[10rem] lg:text-[15rem] min-h-[5rem] md:min-h-[10rem] lg:min-h-[15rem] placeholder-tracking-tighter placeholder-font-bold placeholder-text[5rem] md:placeholder-text-[10rem] lg:placeholder-text-[15rem] active:border-0 active:outline-0 focus:border-0 focus:border-b focus:border-gray-800 focus:outline-none hover:bg-gray-900 hover:bg-opacity-5 hover:cursor-pointer"
+        placeholder="SEARCH"
+        class="transition-all font-bold outline-none w-full text-shadow-lg text-shadow-green-900 border-0 border-b border-transparent px-0 text-green-500 text-[5rem] md:text-[10rem] lg:text-[15rem] min-h-[5rem] md:min-h-[10rem] lg:min-h-[15rem] placeholder-tracking-tighter placeholder-text[5rem] md:placeholder-text-[10rem] lg:placeholder-text-[15rem] active:border-0 active:outline-0 focus:border-0 focus:border-b focus:border-green-950 focus:outline-none hover:cursor-pointer"
     />
 </form>
 
 <script>
     const searchInput = document.getElementById('search');
     const MIN_FONT_SIZE = 24;
-    
+
     function adjustFontSize() {
         const input = searchInput as HTMLInputElement;
         const container = input.parentElement as HTMLElement;
-        
+
         // Only reset font size if input is empty
         if (!input.value) {
             input.style.fontSize = '';
             return;
         }
-        
+
         // Check if text is overflowing
         if (input.scrollWidth > container.clientWidth) {
             const ratio = container.clientWidth / input.scrollWidth;
