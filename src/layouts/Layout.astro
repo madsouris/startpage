@@ -61,7 +61,10 @@ import '../styles/global.css'
 
         {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
     </head>
-    <body class="bg-radial from-green-950 to-black dark">
+    <body class="bg-radial from-lime-950 to-black dark focus:outline-none" tabindex="-1">
         <slot />
     </body>
+    <script>
+        document.body.focus();
+    </script>
 </html>
